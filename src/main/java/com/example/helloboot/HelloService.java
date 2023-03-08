@@ -1,5 +1,5 @@
 package com.example.helloboot;
 
 public interface HelloService {
-    String sayHello(String requireNonNull);
+    String sayHello(String name);
 }
