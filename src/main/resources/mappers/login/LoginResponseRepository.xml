@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mice.backoffice.c2v_mice_backoffice_api.repository.login.LoginResponseRepository">
+
+    <select id="findLoginResponse" parameterType="Long" resultType="LoginResponse">
+        CALL sp_platform_admin_select_for_menus(#{in_admin_id})
+    </select>
+
+</mapper>

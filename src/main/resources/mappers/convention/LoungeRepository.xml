@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mice.backoffice.c2v_mice_backoffice_api.repository.mybatis.LoungeMybatisRepository">
+
+    <select id="findLoungeListByRequest" parameterType="LoungeListSqlRequest" resultType="Map">
+        CALL sp_platform_lounge_select_list(
+            #{in_start_create_datetime}
+            , #{in_end_create_datetime}
+            , #{in_start_lounge_datetime}
+            , #{in_end_lounge_datetime}
+            , #{in_start_update_datetime}
+            , #{in_end_update_datetime}
+            , #{in_template_id}
+            , #{in_event_name}
+            , #{in_event_id}
+            , #{in_lounge_name}
+            , #{in_lounge_no}
+            , #{in_domain_name}
+            , #{in_domain_id}
+            , #{in_page_size}
+            , #{in_page_num})
+    </select>
+
+    <select id="findLoungeByLoungeCode" parameterType="Long" resultType="Map">
+        CALL sp_platform_lounge_select(#{in_event_id})
+    </select>
+
+
+</mapper>

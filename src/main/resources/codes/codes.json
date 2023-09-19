@@ -1,0 +1,3482 @@
+{
+  "ADMIN_STATE_CODE": [
+    {
+      "name": {
+        "ko_kr": "정상",
+        "en_us": "normal"
+      },
+      "value": 1,
+      "prop": "NORMAL",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "미사용",
+        "en_us": "not used"
+      },
+      "value": 2,
+      "prop": "NOT_USED",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "비정상",
+        "en_us": "abnormal"
+      },
+      "value": 3,
+      "prop": "NOT_NORMAL",
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "ADMIN_ROLE_CODE" : [
+    {
+      "name": {
+        "ko_kr": "슈퍼관리자",
+        "en_us": "super admin"
+      },
+      "value": 1,
+      "prop": "SUPER_ADMIN",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "일반관리자",
+        "en_us": "normal admin"
+      },
+      "value": 2,
+      "prop": "NORMAL_ADMIN",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "고객사 슈퍼관리자",
+        "en_us": "super admin for domain"
+      },
+      "value": 3,
+      "prop": "SUPER_ADMIN_FOR_DOMAIN",
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "고객사 일반관리자",
+        "en_us": "normal admin for domain"
+      },
+      "value": 4,
+      "prop": "NORMAL_ADMIN_FOR_DOMAIN",
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "오퍼레이터",
+        "en_us": "operator"
+      },
+      "value": 5,
+      "prop": "OPERATOR",
+      "sort": 5,
+      "useYn": "y"
+    }
+  ],
+  "ADMIN_AUTHORITY_CODE" : [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "READ/WRITE"
+      },
+      "value": 1,
+      "prop": "READ_WRITE",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "조회",
+        "en_us": "ONLY READ"
+      },
+      "value": 2,
+      "prop": "ONLY_READ",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "ADMIN_GROUP_STATE_CODE" : [
+    {
+      "name": {
+        "ko_kr": "정상",
+        "en_us": "normal"
+      },
+      "value": 1,
+      "prop": "NORMAL",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "미사용",
+        "en_us": "not used"
+      },
+      "value": 2,
+      "prop": "NOT_USED",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "비정상",
+        "en_us": "abnormal"
+      },
+      "value": 3,
+      "prop": "NOT_NORMAL",
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+
+  "ADMIN_SEARCH_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "--선택--",
+        "en_us": "--Select--"
+      },
+      "value": "",
+      "prop": "NO_SELECTED",
+      "sort": 0,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "고객사명",
+        "en_us": "domain name"
+      },
+      "value": "domain_name",
+      "prop": "DOMAIN_NAME",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "고객사 ID",
+        "en_us": "domain id"
+      },
+      "value": "domain_id",
+      "prop": "DOMAIN_ID",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "계정 ID",
+        "en_us": "account name"
+      },
+      "value": "account_id",
+      "prop": "ACCOUNT_NAME",
+      "sort": 3,
+      "useYn": "n"
+    }
+  ],
+  "ADMIN_LOG_MAPPING_TYPE": [
+    {
+      "name": {
+        "ko_kr": "open",
+        "en_us": "open"
+      },
+      "value": "1",
+      "prop": "1",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "closed",
+        "en_us": "closed"
+      },
+      "value": "2",
+      "prop": "2",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "ADMIN_LOG_ACTION_CODE": [
+    {
+      "name": {
+        "ko_kr": "open",
+        "en_us": "open"
+      },
+      "value": "1",
+      "prop": "1",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "closed",
+        "en_us": "closed"
+      },
+      "value": "2",
+      "prop": "2",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+
+  "DOMAIN_SEARCH_TYPE": [
+    {
+      "name": {
+        "ko_kr": "고객사명",
+        "en_us": "domain name"
+      },
+      "value": "domain_name",
+      "prop": "DOMAIN_NAME",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "고객사코드",
+        "en_us": "domain id"
+      },
+      "value": "domain_id",
+      "prop": "DOMAIN_ID",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "GROUP_SEARCH_TYPE": [
+    {
+      "name": {
+        "ko_kr": "--선택--",
+        "en_us": "--Select--"
+      },
+      "value": "",
+      "prop": "NO_SELECTED",
+      "sort": 0,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "권한그룹명",
+        "en_us": "authority group"
+      },
+      "value": "group_name",
+      "prop": "GROUP_NAME",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "권한그룹 ID",
+        "en_us": "authority group id"
+      },
+      "value": "group_id",
+      "prop": "GROUP_ID",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+
+  "EVENT_SEARCH_DATE_TYPE_FOR_DASHBOARD": [
+    {
+      "name": {
+        "ko_kr": "--선택--",
+        "en_us": "--Select--"
+      },
+      "value": "",
+      "prop": "NO_SELECTED",
+      "sort": 0,
+      "useYn": "n"
+    },
+    {
+      "name": {
+        "ko_kr": "등록일시",
+        "en_us": ""
+      },
+      "value": "create_datetime",
+      "prop": "CREATE_DT",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사일정",
+        "en_us": ""
+      },
+      "value": "event_datetime",
+      "prop": "EVENT_DT",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "EVENT_SEARCH_DATE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "등록일시",
+        "en_us": ""
+      },
+      "value": "create_datetime",
+      "prop": "CREATE_DT",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사일정",
+        "en_us": ""
+      },
+      "value": "event_datetime",
+      "prop": "EVENT_DT",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "예매일정",
+        "en_us": ""
+      },
+      "value": "sell_datetime",
+      "prop": "SELL_DT",
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "모바일/키오스크 노출",
+        "en_us": ""
+      },
+      "value": "display_datetime",
+      "prop": "DISPLAY_DT",
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "라운지일시",
+        "en_us": ""
+      },
+      "value": "lounge_datetime",
+      "prop": "LOUNGE_DT",
+      "sort": 5,
+      "useYn": "n"
+    }
+  ],
+  "EVENT_SEARCH_TYPE": [
+    {
+      "name": {
+        "ko_kr": "--선택--",
+        "en_us": "--Select--"
+      },
+      "value": "",
+      "prop": "NO_SELECTED",
+      "sort": 0,
+      "useYn": "n"
+    },
+    {
+      "name": {
+        "ko_kr": "행사명",
+        "en_us": "event name"
+      },
+      "value": "event_name",
+      "prop": "EVENT_NAME",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사코드",
+        "en_us": "event id"
+      },
+      "value": "event_id",
+      "prop": "EVENT_ID",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "EVENT_SEARCH_STATE_CODE": [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "all"
+      },
+      "value": 0,
+      "prop": 0,
+      "sort": 0,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "개설완료",
+        "en_us": "opened"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 진행중",
+        "en_us": "in progress"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 종료",
+        "en_us": "end"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "EVENT_SPACE_SEARCH_DATE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "등록일시",
+        "en_us": ""
+      },
+      "value": "create_datetime",
+      "prop": "CREATE_DT",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사일정",
+        "en_us": ""
+      },
+      "value": "event_datetime",
+      "prop": "EVENT_DT",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "PROGRAM_SEARCH_DATE_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "--선택--",
+        "en_us": "--Select--"
+      },
+      "value": "",
+      "prop": "NO_SELECTED",
+      "sort": 0,
+      "useYn": "n"
+    },
+    {
+      "name": {
+        "ko_kr": "등록일시",
+        "en_us": ""
+      },
+      "value": "create_datetime",
+      "prop": "CREATE_DT",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "수정일시",
+        "en_us": ""
+      },
+      "value": "event_datetime",
+      "prop": "UPDATE_DT",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "프로그램일정",
+        "en_us": ""
+      },
+      "value": "program_datetime",
+      "prop": "PROGRAM_DT",
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "PROGRAM_SEARCH_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "--선택--",
+        "en_us": "--Select--"
+      },
+      "value": "",
+      "prop": "NO_SELECTED",
+      "sort": 0,
+      "useYn": "n"
+    },
+    {
+      "name": {
+        "ko_kr": "프로그램명",
+        "en_us": "program name"
+      },
+      "value": "program_name",
+      "prop": "PROGRAM_NM",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "프로그램 코드",
+        "en_us": "program id"
+      },
+      "value": "program_id",
+      "prop": "PROGRAM_ID",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사명",
+        "en_us": "event name"
+      },
+      "value": "event_name",
+      "prop": "EVENT_NM",
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 코드",
+        "en_us": "event id"
+      },
+      "value": "event_id",
+      "prop": "EVENT_ID",
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+  "PROGRAM_SEARCH_PROGRAM_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "all"
+      },
+      "value": 0,
+      "prop": 0,
+      "sort": 0,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "박람회",
+        "en_us": "fair"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "전시회",
+        "en_us": "exhibition"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "컨퍼런스",
+        "en_us": "conference"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "스폐셜 MeetUp",
+        "en_us": "special meetup"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "이벤트",
+        "en_us": "other event"
+      },
+      "value": 5,
+      "prop": 5,
+      "sort": 5,
+      "useYn": "y"
+    }
+  ],
+
+  "SESSION_SEARCH_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "--선택--",
+        "en_us": "--Select--"
+      },
+      "value": "",
+      "prop": "NO_SELECTED",
+      "sort": 0,
+      "useYn": "n"
+    },
+    {
+      "name": {
+        "ko_kr": "프로그램명",
+        "en_us": "program name"
+      },
+      "value": "program_name",
+      "prop": "PROGRAM_NM",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "프로그램 ID",
+        "en_us": "program id"
+      },
+      "value": "program_id",
+      "prop": "PROGRAM_ID",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "세션명",
+        "en_us": "session name"
+      },
+      "value": "session_name",
+      "prop": "SESSION_NM",
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "세션 ID",
+        "en_us": "session id"
+      },
+      "value": "session_id",
+      "prop": "SESSION_ID",
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+  "SESSION_SEARCH_TYPE_FOR_POP" : [
+    {
+      "name": {
+        "ko_kr": "--선택--",
+        "en_us": "--Select--"
+      },
+      "value": "",
+      "prop": "NO_SELECTED",
+      "sort": 0,
+      "useYn": "n"
+    },
+    {
+      "name": {
+        "ko_kr": "프로그램명",
+        "en_us": "program name"
+      },
+      "value": "program_name",
+      "prop": "PROGRAM_NM",
+      "sort": 1,
+      "useYn": "n"
+    },
+    {
+      "name": {
+        "ko_kr": "프로그램 ID",
+        "en_us": "program id"
+      },
+      "value": "program_id",
+      "prop": "PROGRAM_ID",
+      "sort": 2,
+      "useYn": "n"
+    },
+    {
+      "name": {
+        "ko_kr": "세션명",
+        "en_us": "session name"
+      },
+      "value": "session_name",
+      "prop": "SESSION_NM",
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "세션 코드",
+        "en_us": "session id"
+      },
+      "value": "session_id",
+      "prop": "SESSION_ID",
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+
+
+  "TICKET_END_TYPE": [
+    {
+      "name": {
+        "ko_kr": "시간 명시",
+        "en_us": "specify time"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 마감",
+        "en_us": "end event"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "선착순 마감",
+        "en_us": "first come first served"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "HOST_CODE": [
+    {
+      "name": {
+        "ko_kr": "주최사",
+        "en_us": "host"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "후원사",
+        "en_us": "sponsor"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "주관사",
+        "en_us": "agency"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+
+  "FUNCTION_TYPE": [
+    {
+      "name": {
+        "ko_kr": "이벤트",
+        "en_us": "EVENT"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "프로그램",
+        "en_us": "PROGRAM"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "세션",
+        "en_us": "SESSION"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "라운지",
+        "en_us": "LOUNGE"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+
+  "DISPLAY_CODE": [
+    {
+      "name": {
+        "ko_kr": "홀로그램",
+        "en_us": "hologram"
+      },
+      "value": 10001,
+      "prop": 10001,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "스크린",
+        "en_us": "screen"
+      },
+      "value": 10002,
+      "prop": 10002,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 팜플렛",
+        "en_us": "event pamphlet"
+      },
+      "value": 10003,
+      "prop": 10003,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "커버이미지",
+        "en_us": "cover image"
+      },
+      "value": 10101,
+      "prop": 10101,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "강의 스크린",
+        "en_us": "lecture screen"
+      },
+      "value": 10102,
+      "prop": 10102,
+      "sort": 5,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "홍보 스크린",
+        "en_us": "promotion screen"
+      },
+      "value": 10103,
+      "prop": 10103,
+      "sort": 6,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "팝업 배너",
+        "en_us": "popup banner"
+      },
+      "value": 10104,
+      "prop": 10104,
+      "sort": 7,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "벽면 배너",
+        "en_us": "wall banner"
+      },
+      "value": 10105,
+      "prop": 10105,
+      "sort": 8,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "첨부 파일",
+        "en_us": "attachment"
+      },
+      "value": 10106,
+      "prop": 10106,
+      "sort": 9,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 상세 정보 페이지",
+        "en_us": "detail page"
+      },
+      "value": 10107,
+      "prop": 10107,
+      "sort": 10,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "모바일 하단 배너",
+        "en_us": "mobile bottom banner"
+      },
+      "value": 10108,
+      "prop": 10108,
+      "sort": 11,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "리플렛 스탠드",
+        "en_us": "leaflet"
+      },
+      "value": 10201,
+      "prop": 10201,
+      "sort": 11,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "키오스크",
+        "en_us": "kiosk"
+      },
+      "value": 10202,
+      "prop": 10202,
+      "sort": 12,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "특별 키오스크",
+        "en_us": "special kiosk"
+      },
+      "value": 10203,
+      "prop": 10203,
+      "sort": 13,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "ad 스크린",
+        "en_us": "ad screen"
+      },
+      "value": 10204,
+      "prop": 10204,
+      "sort": 14,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "배너",
+        "en_us": "banner"
+      },
+      "value": "10205",
+      "prop": "10205",
+      "sort": 15,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "커버이미지",
+        "en_us": "cover image"
+      },
+      "value": "10301",
+      "prop": "10301",
+      "sort": 15,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "직원 이미지",
+        "en_us": "cover image"
+      },
+      "value": "10401",
+      "prop": "10401",
+      "sort": 16,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "기타",
+        "en_us": "etc"
+      },
+      "value": "10999",
+      "prop": "10999",
+      "sort": 17,
+      "useYn": "y"
+    }
+  ],
+  "DISPLAY_TYPE": [
+    {
+      "name": {
+        "ko_kr": "pdf",
+        "en_us": "pdf"
+      },
+      "value": 20001,
+      "prop": 20001,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "url",
+        "en_us": "url"
+      },
+      "value": 20002,
+      "prop": 20002,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "사진",
+        "en_us": "image"
+      },
+      "value": 20003,
+      "prop": 20003,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "html",
+        "en_us": "html"
+      },
+      "value": 20004,
+      "prop": 20004,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "클릭시 이동 링크",
+        "en_us": "image link"
+      },
+      "value": 20005,
+      "prop": 20005,
+      "sort": 5,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "첨부파일",
+        "en_us": "attachment"
+      },
+      "value": 20006,
+      "prop": 20006,
+      "sort": 6,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "없음",
+        "en_us": "none"
+      },
+      "value": 20007,
+      "prop": 20007,
+      "sort": 7,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "유튜브",
+        "en_us": "youtube"
+      },
+      "value": 20008,
+      "prop": 20008,
+      "sort": 8,
+      "useYn": "y"
+    }
+  ],
+
+  "EVENT_STATE_CODE": [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "ALL"
+      },
+      "value": 0,
+      "prop": 0,
+      "sort": 0,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "개설완료",
+        "en_us": "opened"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 진행중",
+        "en_us": "in progress"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 종료",
+        "en_us": "end"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "PROGRAM_TYPE": [
+    {
+      "name": {
+        "ko_kr": "박람회",
+        "en_us": "fair"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "n"
+    },
+    {
+      "name": {
+        "ko_kr": "전시회",
+        "en_us": "exhibition"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "n"
+    },
+    {
+      "name": {
+        "ko_kr": "컨퍼런스",
+        "en_us": "conference"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "스폐셜 meetup",
+        "en_us": "special meetup"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "기타 이벤트",
+        "en_us": "other event"
+      },
+      "value": 5,
+      "prop": 5,
+      "sort": 5,
+      "useYn": "y"
+    }
+  ],
+  "SWITCH_TYPE": [
+    {
+      "name": {
+        "ko_kr": "자동(세팅된 세션 시작/종료시간 기준으로 세션 자동 전환)",
+        "en_us": "automatic"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "수동(오퍼레이터가 세션 전환)",
+        "en_us": "manual"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 1,
+      "useYn": "y"
+    }
+  ],
+  "SESSION_TYPE": [
+    {
+      "name": {
+        "ko_kr": "선택",
+        "en_us": "select"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "실시간 live",
+        "en_us": "live streaming"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "vod 스트리밍",
+        "en_us": "vod streaming"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "vod 플레이",
+        "en_us": "vod play"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "화상 제공형",
+        "en_us": "image courtesy"
+      },
+      "value": 5,
+      "prop": 5,
+      "sort": 6,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "보이스 제공형",
+        "en_us": "voice courtesy"
+      },
+      "value": 6,
+      "prop": 6,
+      "sort": 7,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "youtube 플레이",
+        "en_us": "youtube play"
+      },
+      "value": 7,
+      "prop": 7,
+      "sort": 5,
+      "useYn": "y"
+    }
+  ],
+  "SESSION_END_TYPE": [
+    {
+      "name": {
+        "ko_kr": "세션 종료 시 강제 퇴장",
+        "en_us": "forced exit"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "남아서 영상 시청",
+        "en_us": "continue"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "SESSION_STATE_CODE": [
+    {
+      "name": {
+        "ko_kr": "준비중",
+        "en_us": "ready"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "강연중",
+        "en_us": "in lecture"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "휴식",
+        "en_us": "rest"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "Q&A",
+        "en_us": "question and answer"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "입장",
+        "en_us": "enter"
+      },
+      "value": 5,
+      "prop": 5,
+      "sort": 5,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "종료",
+        "en_us": "finish"
+      },
+      "value": 6,
+      "prop": 6,
+      "sort": 6,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "삭제",
+        "en_us": "delete"
+      },
+      "value": 7,
+      "prop": 7,
+      "sort": 7,
+      "useYn": "y"
+    }
+  ],
+  "SESSION_DISPLAY_CODE":[
+    {
+      "name": {
+        "ko_kr": "사용",
+        "en_us": "use"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "미사용",
+        "en_us": "none use"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "삭제",
+        "en_us": "delete"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "SESSION_ONLINE_CODE": [
+    {
+      "name": {
+        "ko_kr": "온/오프라인 연계",
+        "en_us": "online and offline"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "온라인 온리",
+        "en_us": "online only"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "STAFF_TYPE": [
+    {
+      "name": {
+        "ko_kr": "연사",
+        "en_us": "speaker"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "사회자",
+        "en_us": "moderator"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "TICKET_ONLINE_CODE": [
+    {
+      "name": {
+        "ko_kr": "온라인",
+        "en_us": "online"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "오프라인",
+        "en_us": "offline"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "TICKET_STATE_CODE": [
+    {
+      "name": {
+        "ko_kr": "정상",
+        "en_us": "normal"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    }
+  ],
+  "PACKAGE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "선택",
+        "en_us": "select"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 내 전체 세션 입장",
+        "en_us": "entrance all in session"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "프로그램 내 전체 세션 입장",
+        "en_us": "entrance all in program"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "세션 지정 입장",
+        "en_us": "entrance to session"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+  "PACKAGE_AUTHORITY_CODE": [
+    {
+      "name": {
+        "ko_kr": "선택",
+        "en_us": "default"
+      },
+      "value": 5,
+      "prop": 5,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "연사",
+        "en_us": "speaker"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "스텝",
+        "en_us": "staff"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "참관객",
+        "en_us": "normal"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "오퍼레이터",
+        "en_us": "operator"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 5,
+      "useYn": "y"
+    }
+  ],
+  "PACKAGE_STATE_CODE": [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "All"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "판매중",
+        "en_us": "SALE"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "판매중지",
+        "en_us": "Stop Sale"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "PACKAGE_PRICE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "무료",
+        "en_us": "free"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "유료(균등)",
+        "en_us": "payment(equal)"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "유료(차등)",
+        "en_us": "payment(differential)"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "PACKAGE_SEARCH_DATE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "생성 일시",
+        "en_us": "create date"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 일정",
+        "en_us": "event date"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "수정 일시",
+        "en_us": "update date"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "PACKAGE_SEARCH_NAME_AND_CODE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "행사 명",
+        "en_us": "event name"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 코드",
+        "en_us": "event code"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "상품 명",
+        "en_us": "package name"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "상품 코드",
+        "en_us": "package code"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+  "PACKAGE_SEARCH_DOMAIN_AND_CODE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "고객사",
+        "en_us": "host name"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "고객사 코드",
+        "en_us": "host code"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "PACKAGE_SEARCH_STAFF_TYPE": [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "all"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "연사",
+        "en_us": "speaker"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "스태프",
+        "en_us": "staff"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "참관객",
+        "en_us": "visitor"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "오퍼레이터",
+        "en_us": "operator"
+      },
+      "value": 5,
+      "prop": 5,
+      "sort": 5,
+      "useYn": "n"
+    }
+  ],
+
+  "NOTICE_BOARD_ARTICLE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "선택",
+        "en_us": "select"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "통합",
+        "en_us": "integrated"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "일반",
+        "en_us": "normal"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "NOTICE_BOARD_SEARCH_DATE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "수정 시간",
+        "en_us": "update date"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "생성 시간",
+        "en_us": "create date"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "NOTICE_BOARD_SEARCH_ARTICLE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "all"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "통합",
+        "en_us": "integrated"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "일반",
+        "en_us": "normal"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "NOTICE_BOARD_SEARCH_ROLLING_TYPE": [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "all"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "롤링",
+        "en_us": "rolling"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "롤링 안됨",
+        "en_us": "none rolling"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "NOTICE_BOARD_SEARCH_TITLE_AND_CREATOR_TYPE": [
+    {
+      "name": {
+        "ko_kr": "제목",
+        "en_us": "title"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "수정자 이름",
+        "en_us": "update user name"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "수정자 id",
+        "en_us": "update user id"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "LOUNGE_STATE_CODE": [
+    {
+      "name": {
+        "ko_kr": "사용",
+        "en_us": "use"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "사용 안함",
+        "en_us": "none use"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "삭제",
+        "en_us": "delete"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "SURVEY_CODE": [
+    {
+      "name": {
+        "ko_kr": "설문",
+        "en_us": "survey"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "만족도 조사",
+        "en_us": "satisfaction"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "SURVEY_MAPPING_TYPE": [
+    {
+      "name": {
+        "ko_kr": "행사",
+        "en_us": "event"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "프로그램",
+        "en_us": "program"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "세션",
+        "en_us": "session"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "SURVEY_STATE_CODE": [
+    {
+      "name": {
+        "ko_kr": "사용",
+        "en_us": "use"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "미사용",
+        "en_us": "none use"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "삭제",
+        "en_us": "delete"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "SCREEN_STATE_CODE": [
+    {
+      "name": {
+        "ko_kr": "사용",
+        "en_us": "use"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "미사용",
+        "en_us": "none use"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "이미지",
+        "en_us": "image"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "동영상",
+        "en_us": "video"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "삭제",
+        "en_us": "delete"
+      },
+      "value": 5,
+      "prop": 5,
+      "sort": 5,
+      "useYn": "y"
+    }
+  ],
+  "SCREEN_MAPPING_TYPE": [
+    {
+      "name": {
+        "ko_kr": "행사",
+        "en_us": "event"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "프로그램",
+        "en_us": "program"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "세션",
+        "en_us": "session"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "라운지",
+        "en_us": "lounge"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+  "SCREEN_DISPLAY_STATE_CODE": [
+    {
+      "name": {
+        "ko_kr": "사용",
+        "en_us": "use"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "미사용",
+        "en_us": "none use"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "삭제",
+        "en_us": "delete"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "LANGUAGE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "한국어",
+        "en_us": "korean"
+      },
+      "value": "ko_kr",
+      "prop": "ko_kr",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "영어",
+        "en_us": "english"
+      },
+      "value": "en_us",
+      "prop": "en_us",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "SPECIAL_MEETUP_SESSION_TYPE": [
+    {
+      "name": {
+        "ko_kr": "화상제공형",
+        "en_us": ""
+      },
+      "value": "5",
+      "prop": "",
+      "detail_value" : {
+        "max_member_count" : 20
+      },
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "보이스채팅형",
+        "en_us": "A"
+      },
+      "value": "6",
+      "prop": "",
+      "detail_value" : {
+        "max_member_count" : 50
+      },
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "LOUNGE_SEARCH_DATE_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "등록일시",
+        "en_us": "create_datetime"
+      },
+      "value": 1,
+      "prop": "CREATE_DT",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "라운지일시",
+        "en_us": "lounge_datetime"
+      },
+      "value": 2,
+      "prop": "LOUNGE_DT",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "수정일시",
+        "en_us": "update_datetime"
+      },
+      "value": 3,
+      "prop": "UPDATE_DT",
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "LOUNGE_SEARCH_NAME_AND_CODE_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "라운지명",
+        "en_us": "lounge_name"
+      },
+      "value": 1,
+      "prop": "LOUNGE_NAME",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "라운지코드",
+        "en_us": "lounge_code"
+      },
+      "value": 2,
+      "prop": "LOUNGE_CODE",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사명",
+        "en_us": "event_name"
+      },
+      "value":3,
+      "prop": "EVENT_NAME",
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사코드",
+        "en_us": "event_code"
+      },
+      "value": 4,
+      "prop": "EVENT_CODE",
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+  "LOUNGE_SEARCH_DOMAIN_AND_CODE_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "고객사",
+        "en_us": "host_name"
+      },
+      "value": 1,
+      "prop": "HOST_NAME",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "고객사코드",
+        "en_us": "host_code"
+      },
+      "value": 2,
+      "prop": "HOST_CODE",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "SESSION_QUESTION_STATE_CODE" : [
+    {
+      "name": {
+        "ko_kr": "답변 전",
+        "en_us": "before answer"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "답변 중",
+        "en_us": "answering"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "답변 완료",
+        "en_us": "answer complete"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "SESSION_QUESTION_LIST_ORDER" : [
+    {
+      "name": {
+        "ko_kr": "좋아요",
+        "en_us": "like"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "조회순",
+        "en_us": "view"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "이름순",
+        "en_us": "name"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "BANNER_SEARCH_DATE_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "수정일시",
+        "en_us": "update_datetime"
+      },
+      "value": "update_datetime",
+      "prop": "UPDATE_DT",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "등록일시",
+        "en_us": "create_datetime"
+      },
+      "value": "create_datetime",
+      "prop": "CREATE_DT",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "BANNER_CODE" : [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "all"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "모바일",
+        "en_us": "mobile"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "PC",
+        "en_us": "pc"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "BANNER_STATE_CODE" : [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "all"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "사용",
+        "en_us": "use"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "미사용",
+        "en_us": "non_use"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "BANNER_SEARCH_NAME_AND_CODE_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "위치설명",
+        "en_us": "location_description"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "위치",
+        "en_us": "location"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "수정자",
+        "en_us": "update_user"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "수정자ID",
+        "en_us": "update_user_id"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+  "BANNER_DISPLAY_SEARCH_DATE_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "수정일시",
+        "en_us": "update_datetime"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "등록일시",
+        "en_us": "create_datetime"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "BANNER_DISPLAY_STATE_CODE" : [
+    {
+      "name": {
+        "ko_kr": "노출 중",
+        "en_us": "use"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "미노출",
+        "en_us": "non_use"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "노출 대기",
+        "en_us": "waiting"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "기간 종료",
+        "en_us": "end"
+      },
+      "value": 5,
+      "prop": 5,
+      "sort": 5,
+      "useYn": "y"
+    }
+  ],
+  "BANNER_DISPLAY_STATE_CODE_FOR_SEARCH" : [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "all"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "노출 중",
+        "en_us": "use"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "미노출",
+        "en_us": "non_use"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "노출 대기",
+        "en_us": "waiting"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "기간 종료",
+        "en_us": "end"
+      },
+      "value": 5,
+      "prop": 5,
+      "sort": 5,
+      "useYn": "y"
+    }
+  ],
+  "BANNER_DISPLAY_SEARCH_NAME_AND_CODE_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "위치설명",
+        "en_us": "location_description"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "위치",
+        "en_us": "location"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "수정자",
+        "en_us": "update_user"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "수정자ID",
+        "en_us": "update_user_id"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+  "EVENT_DISPLAY_STATE_CODE" : [
+    {
+      "name": {
+        "ko_kr": "OPEN",
+        "en_us": "OPEN"
+      },
+      "value": "1",
+      "prop": "OPEN",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "CLOSED",
+        "en_us": "CLOSED"
+      },
+      "value": "2",
+      "prop": "CLOSED",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "EVENT_SELL_STATE_CODE" : [
+    {
+      "name": {
+        "ko_kr": "OPEN",
+        "en_us": "OPEN"
+      },
+      "value": "1",
+      "prop": "OPEN",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "CLOSED",
+        "en_us": "CLOSED"
+      },
+      "value": "2",
+      "prop": "CLOSED",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "CLASS_CODE" : [
+    {
+      "name": {
+        "ko_kr": "NORMAL",
+        "en_us": "NORMAL"
+      },
+      "value": "1",
+      "prop": "NORMAL",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "VIP",
+        "en_us": "VIP"
+      },
+      "value": "2",
+      "prop": "VIP",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "VVIP",
+        "en_us": "VVIP"
+      },
+      "value": "3",
+      "prop": "VVIP",
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "BLOCK",
+        "en_us": "BLOCK"
+      },
+      "value": "4",
+      "prop": "BLOCK",
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "DROP_OUT",
+        "en_us": "DROP_OUT"
+      },
+      "value": "5",
+      "prop": "DROP_OUT",
+      "sort": 5,
+      "useYn": "y"
+    }
+  ],
+  "AUDIENCE_SORT_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "NAME",
+        "en_us": "NAME"
+      },
+      "value": "1",
+      "prop": "NAME",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "NEW",
+        "en_us": "NEW"
+      },
+      "value": "2",
+      "prop": "NEW",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "MESSAGE_SEND_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "ALL",
+        "en_us": "ALL"
+      },
+      "value": "1",
+      "prop": "ALL",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "LOCAL",
+        "en_us": "LOCAL"
+      },
+      "value": "2",
+      "prop": "LOCAL",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "WHISPER",
+        "en_us": "WHISPER"
+      },
+      "value": "3",
+      "prop": "WHISPER",
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "MESSAGE_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "READ",
+        "en_us": "READ"
+      },
+      "value": "100",
+      "prop": "READ",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "RECALL",
+        "en_us": "RECALL"
+      },
+      "value": "101",
+      "prop": "RECALL",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "FORWARD",
+        "en_us": "FORWARD"
+      },
+      "value": "102",
+      "prop": "FORWARD",
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "GROUP_INVITE",
+        "en_us": "GROUP_INVITE"
+      },
+      "value": "103",
+      "prop": "GROUP_INVITE",
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "GROUP_EXIT",
+        "en_us": "GROUP_EXIT"
+      },
+      "value": "104",
+      "prop": "GROUP_EXIT",
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "SEND",
+        "en_us": "SEND"
+      },
+      "value": "105",
+      "prop": "SEND",
+      "sort": 5,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "LOCAL_ENTER",
+        "en_us": "LOCAL_ENTER"
+      },
+      "value": "200",
+      "prop": "LOCAL_ENTER",
+      "sort": 6,
+      "useYn": "y"
+    }
+  ],
+  "MESSAGE_COMMENT_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "NORMAL",
+        "en_us": "NORMAL"
+      },
+      "value": "1000",
+      "prop": "NORMAL",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "MENTION",
+        "en_us": "MENTION"
+      },
+      "value": "1001",
+      "prop": "MENTION",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "URL",
+        "en_us": "URL"
+      },
+      "value": "1002",
+      "prop": "URL",
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "FILE_CONTENTS",
+        "en_us": "FILE_CONTENTS"
+      },
+      "value": "1003",
+      "prop": "FILE_CONTENTS",
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "EMOTICON",
+        "en_us": "EMOTICON"
+      },
+      "value": "1004",
+      "prop": "EMOTICON",
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "CUSTOM_DATA",
+        "en_us": "CUSTOM_DATA"
+      },
+      "value": "1005",
+      "prop": "CUSTOM_DATA",
+      "sort": 5,
+      "useYn": "y"
+    }
+  ],
+  "PRICE_CODE" : [
+    {
+      "name": {
+        "ko_kr": "FREE",
+        "en_us": "FREE"
+      },
+      "value": "1",
+      "prop": "FREE",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "PAY",
+        "en_us": "PAY"
+      },
+      "value": "2",
+      "prop": "PAY",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "MIX",
+        "en_us": "MIX"
+      },
+      "value": "3",
+      "prop": "MIX",
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "CYCLE_CODE" : [
+    {
+      "name": {
+        "ko_kr": "EVERYDAY",
+        "en_us": "EVERYDAY"
+      },
+      "value": "1",
+      "prop": "EVERYDAY",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "WEEKLY",
+        "en_us": "WEEKLY"
+      },
+      "value": "2",
+      "prop": "WEEKLY",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "MONTHLY",
+        "en_us": "MONTHLY"
+      },
+      "value": "3",
+      "prop": "MONTHLY",
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "EVERY_YEAR",
+        "en_us": "EVERY_YEAR"
+      },
+      "value": "4",
+      "prop": "EVERY_YEAR",
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+  "ON_OFF_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "Off",
+        "en_us": "Off"
+      },
+      "value": "1",
+      "prop": "Off",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "On",
+        "en_us": "On"
+      },
+      "value": "2",
+      "prop": "On",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "COMMAND_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "StreamingStart",
+        "en_us": "StreamingStart"
+      },
+      "value": "StreamingStart",
+      "prop": "StreamingStart",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "StreamingEnd",
+        "en_us": "StreamingEnd"
+      },
+      "value": "2",
+      "prop": "StreamingEnd",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "SessionChange",
+        "en_us": "SessionChange"
+      },
+      "value": "3",
+      "prop": "SessionChange",
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "SessionStatusChange",
+        "en_us": "SessionStatusChange"
+      },
+      "value": "4",
+      "prop": "SessionStatusChange",
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "ProgramStatusChange",
+        "en_us": "ProgramStatusChange"
+      },
+      "value": "5",
+      "prop": "ProgramStatusChange",
+      "sort": 5,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "MotionOnOff",
+        "en_us": "MotionOnOff"
+      },
+      "value": "6",
+      "prop": "MotionOnOff",
+      "sort": 6,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "UserKickOut",
+        "en_us": "UserKickOut"
+      },
+      "value": "7",
+      "prop": "UserKickOut",
+      "sort": 7,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "UserMicOnOff",
+        "en_us": "UserMicOnOff"
+      },
+      "value": "8",
+      "prop": "UserMicOnOff",
+      "sort": 8,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "QuestionStatusChange",
+        "en_us": "QuestionStatusChange"
+      },
+      "value": "9",
+      "prop": "QuestionStatusChange",
+      "sort": 9,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "BlockUser",
+        "en_us": "BlockUser"
+      },
+      "value": "10",
+      "prop": "BlockUser",
+      "sort": 10,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "TestMakeComplete",
+        "en_us": "TestMakeComplete"
+      },
+      "value": "11",
+      "prop": "TestMakeComplete",
+      "sort": 11,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "TestMakeFail",
+        "en_us": "TestMakeFail"
+      },
+      "value": "12",
+      "prop": "TestMakeFail",
+      "sort": 12,
+      "useYn": "y"
+    }
+  ],
+  "COUPON_LOG_DATE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "발급 일시",
+        "en_us": "create date"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 일정",
+        "en_us": "event date"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "COUPON_LOG_TYPE": [
+    {
+      "name": {
+        "ko_kr": "전체",
+        "en_us": "all"
+      },
+      "value": 5,
+      "prop": 5,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "연사",
+        "en_us": "speaker"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "스태프",
+        "en_us": "staff"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "참관객",
+        "en_us": "visitor"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 4,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "오퍼레이터",
+        "en_us": "operator"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 5,
+      "useYn": "y"
+    }
+  ],
+  "COUPON_LOG_SEARCH_NAME_AND_CODE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "행사 명",
+        "en_us": "event name"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "행사 코드",
+        "en_us": "event code"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "상품 명",
+        "en_us": "package name"
+      },
+      "value": 3,
+      "prop": 3,
+      "sort": 3,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "상품 코드",
+        "en_us": "package code"
+      },
+      "value": 4,
+      "prop": 4,
+      "sort": 4,
+      "useYn": "y"
+    }
+  ],
+  "COUPON_LOG_SEARCH_DOMAIN_AND_CODE_TYPE": [
+    {
+      "name": {
+        "ko_kr": "고객사",
+        "en_us": "host name"
+      },
+      "value": 1,
+      "prop": 1,
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "고객사 코드",
+        "en_us": "host code"
+      },
+      "value": 2,
+      "prop": 2,
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "EVENT_SPACE_STATE_CODE" : [
+    {
+      "name": {
+        "ko_kr": "UNOPENED",
+        "en_us": "UNOPENED"
+      },
+      "value": "0",
+      "prop": "UNOPENED",
+      "sort": 0,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "OPEN",
+        "en_us": "OPEN"
+      },
+      "value": "1",
+      "prop": "OPEN",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "CLOSED",
+        "en_us": "CLOSED"
+      },
+      "value": "2",
+      "prop": "CLOSED",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "LOUNGE_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "NORMAL",
+        "en_us": "NORMAL"
+      },
+      "value": "1",
+      "prop": "NORMAL",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "EXPERIENCE",
+        "en_us": "EXPERIENCE"
+      },
+      "value": "2",
+      "prop": "EXPERIENCE",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "OPERATOR_ADMIN_SEARCH_NAME_AND_ID" : [
+    {
+      "name": {
+        "ko_kr": "NAME",
+        "en_us": "NAME"
+      },
+      "value": "1",
+      "prop": "NAME",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "ADMIN_ID",
+        "en_us": "ADMIN_ID"
+      },
+      "value": "2",
+      "prop": "ADMIN_ID",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "OPERATOR_ADMIN_STAFF_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "ALL",
+        "en_us": "ALL"
+      },
+      "value": "0",
+      "prop": "ALL",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "SPEAKER",
+        "en_us": "SPEAKER"
+      },
+      "value": "5",
+      "prop": "SPEAKER",
+      "sort": 2,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "STAFF",
+        "en_us": "STAFF"
+      },
+      "value": "6",
+      "prop": "STAFF",
+      "sort": 3,
+      "useYn": "y"
+    }
+  ],
+  "OPERATOR_ADMIN_USE_YN" : [
+    {
+      "name": {
+        "ko_kr": "USE",
+        "en_us": "USE"
+      },
+      "value": "1",
+      "prop": "USE",
+      "sort": 1,
+      "useYn": "y"
+    },
+    {
+      "name": {
+        "ko_kr": "NOT_USE",
+        "en_us": "NOT_USE"
+      },
+      "value": "2",
+      "prop": "NOT_USE",
+      "sort": 2,
+      "useYn": "y"
+    }
+  ],
+  "PARTNER_ADMIN_STAFF_TYPE" : [
+    {
+      "name": {
+        "ko_kr": "PARTNER",
+        "en_us": "PARTNER"
+      },
+      "value": "7",
+      "prop": "PARTNER",
+      "sort": 1,
+      "useYn": "y"
+    }
+  ]
+}
+
+

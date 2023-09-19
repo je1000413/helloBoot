@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mice.backoffice.c2v_mice_backoffice_api.repository.admin.AdminAuthRepository">
+
+    <select id="checkAuth" >
+        CALL sp_platform_admin_menu_select_for_role_check(#{in_cur_admin_id}, #{in_cur_menu_seq}, #{in_method})
+    </select>
+
+</mapper>

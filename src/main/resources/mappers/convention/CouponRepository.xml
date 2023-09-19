@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mice.backoffice.c2v_mice_backoffice_api.repository.mybatis.CouponMybatisRepository">
+
+    <select id="findCouponListByCondition" parameterType="Map" resultType="Map">
+        CALL sp_platform_coupon_select_list(
+              #{in_start_create_datetime}
+            , #{in_end_create_datetime}
+            , #{in_start_event_datetime}
+            , #{in_end_event_datetime}
+            , #{in_start_update_datetime}
+            , #{in_end_update_datetime}
+            , #{in_state_code}
+            , #{in_staff_type}
+            , #{in_package_name}
+            , #{in_package_id}
+            , #{in_event_name}
+            , #{in_event_id}
+            , #{in_company_name}
+            , #{in_company_id}
+            , #{in_page_size}
+            , #{in_page_num})
+    </select>
+
+    <select id="makeCouponListByPackageId" parameterType="Map" resultType="Map">
+        CALL sp_platform_coupon_insert(
+            #{in_package_id}
+            , #{in_coupon_num}
+            ,#{in_coupon_length}
+            , #{in_coupon_name}
+            , #{in_price}
+            , #{in_state_code}
+            , #{in_user_id}
+            , #{in_start_datetime}
+            , #{in_end_datetime}
+            , #{in_now_datetime})
+    </select>
+
+    <select id="findCouponLogListByCondition" parameterType="Map" resultType="Map">
+        CALL sp_platform_coupon_select_log_list(
+            #{in_start_create_datetime}
+            , #{in_end_create_datetime}
+            , #{in_start_event_datetime}
+            , #{in_end_event_datetime}
+            , #{in_coupon_log_type}
+            , #{in_package_name}
+            , #{in_package_id}
+            , #{in_event_name}
+            , #{in_event_id}
+            , #{in_company_name}
+            , #{in_company_id}
+            , #{in_page_size}
+            , #{in_page_num})
+    </select>
+
+    <select id="findByPackageId" parameterType="String" resultType="Map">
+        CALL sp_platform_package_select(
+            #{in_package_id})
+    </select>
+
+    <select id="findCouponListByPackageId" parameterType="String" resultType="Map">
+        CALL sp_platform_coupon_select(
+            #{in_package_id})
+    </select>
+
+    <select id="findByPackageIdAndStartDatetimeAndEndDatetime" parameterType="Map" resultType="Map">
+        CALL sp_platform_coupon_select_now(
+            #{in_package_id},
+            #{in_start_datetime},
+            #{in_end_datetime})
+    </select>
+
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mice.backoffice.c2v_mice_backoffice_api.repository.mybatis.AdminMybatisRepository">
+
+    <select id="findOperatorAdminListByCondition" parameterType="OpAdminListSqlRequest" resultType="Map">
+        CALL sp_platform_op_admin_select_list(
+            #{in_operator_name}
+            , #{in_operator_id}
+            , #{in_staff_type}
+            , #{in_page_size}
+            , #{in_page_num})
+    </select>
+
+</mapper>

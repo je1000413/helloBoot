@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds">
+    <property name="LOGS_ABSOLUTE_PATH" value="./logs" />
+    <property name="LOGS_PROJECT_NAME" value="c2v_mice_backoffice_api" />
+
+    <appender name="FILE_APPLICATION_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class = "ch.qos.logback.classic.filter.LevelFilter">
+            <level>ALL</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${LOGS_ABSOLUTE_PATH}/application/${LOGS_PROJECT_NAME}-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- each file should be at most 100MB, keep 60 days worth of history, but at most 20GB -->
+            <maxFileSize>100MB</maxFileSize>
+            <maxHistory>60</maxHistory>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d][%-5p][%t][%C{1}-%L] %m - %r%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_INFO_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class = "ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${LOGS_ABSOLUTE_PATH}/info/${LOGS_PROJECT_NAME}-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- each file should be at most 100MB, keep 60 days worth of history, but at most 20GB -->
+            <maxFileSize>100MB</maxFileSize>
+            <maxHistory>60</maxHistory>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d][%-5p][%t][%C{1}-%L] %m - %r%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_DEBUG_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class = "ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${LOGS_ABSOLUTE_PATH}/debug/${LOGS_PROJECT_NAME}-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- each file should be at most 100MB, keep 60 days worth of history, but at most 20GB -->
+            <maxFileSize>100MB</maxFileSize>
+            <maxHistory>60</maxHistory>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d][%-5p][%t][%C{1}-%L] %m - %r%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_WARN_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class = "ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${LOGS_ABSOLUTE_PATH}/warn/${LOGS_PROJECT_NAME}-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- each file should be at most 100MB, keep 60 days worth of history, but at most 20GB -->
+            <maxFileSize>100MB</maxFileSize>
+            <maxHistory>60</maxHistory>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d][%-5p][%t][%C{1}-%L] %m - %r%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_ERROR_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class = "ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${LOGS_ABSOLUTE_PATH}/error/${LOGS_PROJECT_NAME}-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- each file should be at most 100MB, keep 60 days worth of history, but at most 20GB -->
+            <maxFileSize>100MB</maxFileSize>
+            <maxHistory>60</maxHistory>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d][%-5p][%t][%C{1}-%L] %m - %r%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_TRACE_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class = "ch.qos.logback.classic.filter.LevelFilter">
+            <level>TRACE</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${LOGS_ABSOLUTE_PATH}/trace/${LOGS_PROJECT_NAME}-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- each file should be at most 100MB, keep 60 days worth of history, but at most 20GB -->
+            <maxFileSize>100MB</maxFileSize>
+            <maxHistory>60</maxHistory>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d][%-5p][%t][%C{1}-%L] %m - %r%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="com.com2verse.platform.logger.CustomJsonLayout">
+                <timestampFormat>yyyy-MM-dd'T'HH:mm:ss.SSSX</timestampFormat>
+                <timestampFormatTimezoneId>Etc/UTC</timestampFormatTimezoneId>
+                <categoryName>${LOGS_PROJECT_NAME}</categoryName>
+                <appendLineSeparator>true</appendLineSeparator>
+                <jsonFormatter class="ch.qos.logback.contrib.jackson.JacksonJsonFormatter">
+                    <prettyPrint>false</prettyPrint>
+                </jsonFormatter>
+            </layout>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="FILE_APPLICATION_LOG" />
+        <appender-ref ref="FILE_INFO_LOG" />
+        <appender-ref ref="FILE_DEBUG_LOG" />
+        <appender-ref ref="FILE_WARN_LOG" />
+        <appender-ref ref="FILE_ERROR_LOG" />
+        <appender-ref ref="FILE_TRACE_LOG" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>

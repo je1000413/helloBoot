@@ -1,0 +1,1 @@
+docker build -t c2v_mice_backoffice_api --build-arg active=test -f Dockerfile .

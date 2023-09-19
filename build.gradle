@@ -1,23 +1,166 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.0.4'
+	id 'org.springframework.boot' version '3.0.1'
 	id 'io.spring.dependency-management' version '1.1.0'
 }
+//
+//bootRun {
+//	doFirst {
+//		if (project.hasProperty('spring.profiles.active')) {
+//			systemProperty 'spring.profiles.active', project.property('spring.profiles.active')
+//		} else {
+//			throw new GradleException("spring.profiles.active not specified")
+//		}
+//	}
+//}
 
-group = 'com.example'
-version = '0.0.1-SNAPSHOT'
+
+def versionPropFile = file('conf/version.properties')
+def versionProps = new Properties()
+def versionMajor
+def versionMinor
+def versionBuild
+def appEnv
+
+if (versionPropFile.canRead()) {
+	versionProps.load(new FileInputStream(versionPropFile))
+	versionMajor = versionProps['VERSION_MAJOR'].toInteger()
+	versionMinor = versionProps['VERSION_MINOR'].toInteger()
+	versionBuild = versionProps['VERSION_BUILD'].toInteger()
+	appEnv = versionProps['APP_ENV'].toString()
+} else {
+	throw new FileNotFoundException("Could not read version.properties")
+}
+
+task updateVersion {
+	gradle.taskGraph.whenReady { taskGraph ->
+		if (taskGraph.hasTask(updateVersion)) {
+			versionBuild = versionBuild + 1;
+			versionProps['VERSION_BUILD'] = versionBuild.toString()
+			versionProps.store(versionPropFile.newWriter(), null)
+		}
+	}
+}
+
+
+group = 'com.mice.backoffice'
+//version = '1.0.0'
 sourceCompatibility = '17'
 
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+
+if(appEnv.toLowerCase().length() > 0){
+	switch (appEnv.toLowerCase()) {
+		case 'local':
+			project.ext {
+				repoUrl = 'http://34.64.204.148:20020/repository/'
+			}
+			break
+		default:
+			project.ext {
+				repoUrl = 'http://172.32.26.200:20020/repository/'
+			}
+	}
+} else {
+	project.ext {
+		repoUrl = 'http://172.32.26.200:20020/repository/'
+	}
+}
+
 repositories {
-	mavenCentral()
+	maven {
+		allowInsecureProtocol = true
+		url = project.repoUrl + 'c2v-platform/'
+	}
+	maven {
+		allowInsecureProtocol = true
+		url = project.repoUrl + 'maven-central/'
+	}
 }
 
 dependencies {
+
+	/*
+	Implementation: 구현할 때에만 사용된다.
+	compileOnly: 컴파일할 때에만 사용되고 런타임 때에는 사용되지 않는다.
+	runtimeOnly: 런타임 때에만 사용된다.
+	testImplementation: 테스트할 때에만 사용된다.
+	*/
+	implementation 'org.springframework:spring-test:5.3.9'
+
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-//	implementation 'org.springframework.boot:spring-boot-starter-jetty'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'com.google.code.gson:gson:2.9.0'
+	implementation 'javax.servlet:javax.servlet-api:3.0.1'
+
+
+	//Com2verse common module
+	//implementation files('lib/c2v-platform-common-1.0.1.jar')
+	implementation 'com.com2verse.platform:c2v-platform-common:1.0.20-20230823.082732-1'
+//	implementation 'com.com2verse.platform:c2v-platform-common:latest.release'
+	implementation 'org.jetbrains:annotations:20.1.0'
+
+	//lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	//swagger
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+
+	//mysql
+	implementation 'mysql:mysql-connector-java:8.0.31'
+
+	//redis
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+	//kafka
+	implementation 'org.springframework.kafka:spring-kafka'
+
+	// jwt
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+	implementation 'io.jsonwebtoken:jjwt-impl:0.11.5'
+	implementation 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+	//jbcrypt
+	implementation 'org.mindrot:jbcrypt:0.4'
+
+	//mybatis
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.0'
+
+	//Querydsl 추가
+	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+	annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
+	annotationProcessor "jakarta.annotation:jakarta.annotation-api"
+	annotationProcessor "jakarta.persistence:jakarta.persistence-api"
+
+	//multiPartFile
+	implementation 'commons-io:commons-io:2.11.0'
+
+	//FeignClient
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.0.2'
+
+	// webflux
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+
+	compileOnly 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+clean {
+	delete file('src/main/generated')
 }

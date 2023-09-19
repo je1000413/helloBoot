@@ -1,0 +1,121 @@
+{
+  "eventName": {
+    "ko_kr": "eventName1_kr",
+    "en_us": "eventName1_us"
+  },
+  "eventDescription": {
+    "ko_kr": "eventDescription1_kr",
+    "en_us": "eventDescription1_us"
+  },
+  "loungeName": {
+    "ko_kr": ""
+  },
+  "offlineLocation": {
+    "ko_kr": "offlineLocation1_kr",
+    "en_us": "offlineLocation1_us"
+  },
+  "offlineDetailLocation": {
+    "ko_kr": "offlineDetailLocation1_kr",
+    "en_us": "offlineDetailLocation1_us"
+  },
+  "startDatetime": "2023-03-15 10:51",
+  "endDatetime": "2023-03-15 10:51",
+  "sellStartDatetime": "2023-03-15 10:51",
+  "sellEndDatetime": "2023-03-15 10:51",
+  "displayStartDatetime": "2023-03-15 10:51",
+  "displayEndDatetime": "2023-03-15 10:51",
+  "ticketEndType": 1,
+  "stateCode": 1,
+  "displayStateCode": 1,
+  "sellStateCode": 1,
+  "createUserId": 2,
+  "updateUserId": 2,
+  "eventDetailPage": {
+    "screenId": 210,
+    "spaceId": "",
+    "spaceObjectId": 0,
+    "displayCode": 10107,
+    "stateCode": 1,
+    "screenDisplays": [
+      {
+        "displaySeq": 190,
+        "pageNo": 1,
+        "stateCode": 1,
+        "displayType": 20004,
+        "displayContents": {
+          "ko_kr": "eventDetailPage1_kr",
+          "en_us": "eventDetailPage1_us"
+        },
+        "linkAddress": {
+          "ko_kr": ""
+        }
+      }
+    ]
+  },
+  "eventHosts": [
+    {
+      "domainId": 3,
+      "hostCode": "1"
+    }
+  ],
+  "surveys": [
+    {
+      "surveyNo": "24",
+      "surveyCode": 1,
+      "surveyPath": {
+        "ko_kr": "surveyPath1_kr",
+        "en_us": "surveyPath1_us"
+      },
+      "stateCode": 1
+    }
+  ],
+  "eventCoverImages": [
+    {
+      "screenId": 208,
+      "spaceId": "",
+      "spaceObjectId": 0,
+      "displayCode": 10101,
+      "stateCode": 1,
+      "screenDisplays": [
+        {
+          "displaySeq": 187,
+          "pageNo": 1,
+          "stateCode": 1,
+          "displayType": 20003,
+          "displayContents": {
+            "ko_kr": "eventCoverImages2_kr",
+            "en_us": "eventCoverImages2_us"
+          },
+          "linkAddress": {
+            "ko_kr": ""
+          }
+        }
+      ]
+    }
+  ],
+  "eventPopupBanners": [
+    {
+      "screenId": 209,
+      "spaceId": "",
+      "spaceObjectId": 0,
+      "displayCode": 10104,
+      "stateCode": 1,
+      "screenDisplays": [
+        {
+          "displaySeq": 176,
+          "pageNo": 1,
+          "stateCode": 1,
+          "displayType": 20003,
+          "displayContents": {
+            "ko_kr": "eventPopupBanners1_kr",
+            "en_us": "eventPopupBanners1_us"
+          },
+          "linkAddress": {
+            "ko_kr": "linkAddress1_kr",
+            "en_us": "linkAddress1_us"
+          }
+        }
+      ]
+    }
+  ]
+}

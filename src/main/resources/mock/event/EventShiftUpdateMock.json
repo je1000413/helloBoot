@@ -1,0 +1,86 @@
+{
+  "eventName": {
+    "ko_kr": "eventName 1_kr"
+  },
+  "eventDescription": {
+    "ko_kr": "eventDescription 16_kr",
+    "en_us": "eventDescription 16_us"
+  },
+  "location": "location 1",
+  "offlineLocation": null,
+  "startDatetime": "2023-03-15 10:51:24",
+  "endDatetime": "2023-03-15 10:51:24",
+  "sellStartDatetime": "2023-03-15 10:51:24",
+  "sellEndDatetime": "2023-03-15 10:51:24",
+  "displayStartDatetime": "2023-03-15 10:51:24",
+  "displayEndDatetime": "2023-03-15 10:51:24",
+  "ticketEndType": 1,
+  "createUserId": 2,
+  "updateUserId": 2,
+  "eventHosts": [
+    {
+      "domainId": 4,
+      "hostCode": 1
+    }
+  ],
+  "surveys": [
+    {
+      "surveyNo": "e-20230406094101802",
+      "surveyCode": 1,
+      "surveyPath": {
+        "ko_kr": "surveyPath 1_kr",
+        "en_us": "surveyPath 1_us"
+      },
+      "createUserId": 1,
+      "updateUserId": 1
+    },
+    {
+      "surveyNo": "e-20230406094101832",
+      "surveyCode": 1,
+      "surveyPath": null,
+      "createUserId": 2,
+      "updateUserId": 2
+    }
+  ],
+  "eventCoverImages": [
+    {
+      "screenId": 49,
+      "location": "eventCoverImage location 1",
+      "displayCode": 101,
+      "createUserId": 2,
+      "updateUserId": 2,
+      "screenDisplays": [
+        {
+          "pageNo": 1,
+          "displayType": 201,
+          "displayContents": {
+            "ko_kr": "eventCoverImage displayContents_kr 1",
+            "en_us": "eventCoverImage displayContents_us 1"
+          },
+          "createUserId": 2,
+          "updateUserId": 2
+        }
+      ]
+    }
+  ],
+  "eventPopupBanners": [
+    {
+      "screenId": 50,
+      "location": "eventPopupBanner location 1",
+      "displayCode": 101,
+      "createUserId": 2,
+      "updateUserId": 2,
+      "screenDisplays": [
+        {
+          "pageNo": 1,
+          "displayType": 205,
+          "displayContents": {
+            "ko_kr": "eventPopupBanner displayContents_kr 1"
+          },
+          "createUserId": 2,
+          "updateUserId": 2
+        }
+      ]
+    }
+  ]
+}

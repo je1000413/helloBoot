@@ -1,0 +1,20 @@
+version: '3.1'
+services:
+  c2v_mice_backoffice_api:
+    image: asia-northeast3-docker.pkg.dev/com2verse-metaverse-dev/c2v-dev-platform/c2v-mice-backoffice-api:test
+    ports:
+      - "20004:80"
+    container_name: c2v_mice_backoffice_api
+    networks:
+      - default
+    volumes:
+      #- ./c2v_mice_backoffice_api/conf:/root/workspace/c2v_mice_backoffice_api/conf
+      #- ./c2v_mice_backoffice_api/logs:/root/workspace/c2v_mice_backoffice_api/logs
+      - /root/workspace/c2v_mice_backoffice_api/conf:/c2v_mice_backoffice_api/conf:rw
+      - /root/workspace/c2v_mice_backoffice_api/logs:/c2v_mice_backoffice_api/logs:rw
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+networks:
+  default:
+    external:
+      name: bo_network

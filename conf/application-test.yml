@@ -1,0 +1,127 @@
+server:
+  port: 80
+  contextPath: /
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    min-response-size: 1024
+  http2:
+    enabled: true
+  tomcat:
+    max-http-form-post-size: 100MB
+    max-swallow-size: 100MB
+
+logging:
+  config: conf/logback.xml
+  level:
+    com.mice.backoffice.c2v_mice_backoffice_api.client: DEBUG
+    org.hibernate.SQL: ERROR
+    org.hibernate.type.descriptor.sql: TRACE
+
+springdoc:
+  version: 'v1.0.0'
+  api-docs:
+    enabled: true
+    path: /api/v3/api-docs
+    groups:
+      enabled: true
+  swagger-ui:
+    operationsSorter: alpha
+    tagsSorter: alpha
+    enabled: true
+    path: /api/swagger-ui.html
+    use-root-path: true
+  cache:
+    disabled: true
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.32.26.111:10315/p_mice?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    username: platform_user
+    password: PI-89ef#9d5D7
+    hikari:
+      maxLifetime: 3000
+      connection-timeout: 2000
+      validation-timeout: 1000
+      idle-timeout: 1000
+      maximum-pool-size: 10
+      minimum-idle: 1
+  jpa:
+    defer-datasource-initialization: false
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    generate-ddl: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  data:
+    redis:
+      port: 6379
+      host:  localhost
+      timeout: 2000
+      pub-sub:
+        is-expire: true
+        expire: 60
+    rest:
+      base-path: /api
+      default-page-size: 50
+      max-page-size: 10
+  application:
+    name: fileStorage
+  servlet:
+    multipart:
+      enabled : true
+      max-file-size : 100MB
+      max-request-size : 100MB
+  http:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+allow:
+  origin:
+    pattern: http://localhost:[*],https://localhost:[*],https://test-mbo.com2verse.com:[*]
+
+mybatis:
+  type-aliases-package: com.mice.backoffice.c2v_mice_backoffice_api.entity,  com.mice.backoffice.c2v_mice_backoffice_api.model
+  mapper-locations: classpath:mappers/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+chatServer:
+  domain: wss://test-ocm.com2verse.com/chat?deviceId=%s&appId=%s&userId=%s
+  port: 80
+  timeout: 10000
+
+groupServer:
+  domain: https://test-comm-group.com2verse.com/api/v1
+  timeout: 10000
+
+auth:
+  serverName: mice
+  serviceName: mice
+  serviceId: 300
+  domain: http://172.32.31.11:20010
+
+fileStorageV2:
+  domain: https://test-file.com2verse.com
+  managementName: mice
+  managementId: 1
+
+csvTableDataPath:
+  localizationStringForMice: /externals/c2v_table_data/Assets/External/Data/CSV/Mice/LocalizationString_MICE - String.csv
+  localizationStringForOffice: /externals/c2v_table_data/Assets/External/Data/CSV/LocalizationString - String.csv
+  emotion: /externals/c2v_table_data/Assets/External/Data/CSV/Emotion - Emotion.csv
+  effect: /externals/c2v_table_data/Assets/External/Data/CSV/Mice/EffectMICE - EffectMICE.csv
+  spaceOption: /externals/c2v_table_data/Assets/External/Data/CSV/Space - SpaceOptionSetting.csv
+  spaceBaseObject: /externals/c2v_table_data/Assets/External/Data/CSV/Space - BaseObject.csv
+  spaceTemplate: /externals/c2v_table_data/Assets/External/Data/CSV/Space - SpaceTemplate.csv
+  SpaceTemplateArrangement: /externals/c2v_table_data/Assets/External/Data/CSV/Space - SpaceTemplateArrangement.csv
+
+tokens:
+  system: eyJhbGciOiJFUzI1NiIsImtpZCI6ImMydi1zeXN0ZW0ta2V5IiwidHlwIjoiSldUIn0.eyJpc3MiOiJjb20ydmVyc2UuY29tIiwiZXhwIjoxNzIyNjg5ODQyLCJpYXQiOjE2OTEwNjc0NDEsImp0aSI6ImY2ZWM3MGQyLTg1MDItNDM4Yi1hZmIxLTVlYTVlZjY2ZTUyMyIsInNlcnZpY2VOYW1lIjoiYzJ2LW1pY2UtYmFja29mZmljZS1hcGkiLCJzZXJ2ZXJOYW1lIjoiYzJ2LW1pY2UtYmFja29mZmljZS1hcGkiLCJyb2xlIjoic3lzdGVtIn0.X0Yhn7gehcUxRjuSBMsrLgTQ-C0IqAlGL7nT_zggliHrr6vTjasw18IIcoNkqq2G4La7YhJO9GAaJT1L4_L-kA

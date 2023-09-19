@@ -1,0 +1,18 @@
+{
+  "packageType": "3",
+  "packageName": {
+    "ko_kr": "상품 이름1_kr",
+    "en_us": "상품 이름2_kr"
+  },
+  "packageAuthorityCode": "3",
+  "price": 25000,
+  "maxPackageCount": 5000,
+  "eventId": 1000000000000033,
+  "programId": 2000000000000050,
+  "sessionIds": [
+    3000000000000037,
+    3000000000000038,
+    3000000000000040,
+    3000000000000041
+  ]
+}

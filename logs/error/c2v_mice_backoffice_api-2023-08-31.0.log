@@ -1,0 +1,14 @@
+[2023-08-31 10:24:28,291][ERROR][main][o.s.b.d.LoggingFailureAnalysisReporter-40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 20004 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 20004 or configure this application to listen on another port.
+ - 8823

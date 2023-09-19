@@ -1,0 +1,104 @@
+{
+  "eventName": {
+    "ko_kr": "eventName1_kr",
+    "en_us": "eventName1_us"
+  },
+  "eventDescription": {
+    "ko_kr": "",
+    "en_us": ""
+  },
+  "location": "eventLocation",
+  "offlineLocation": {
+    "ko_kr": "",
+    "en_us": ""
+  },
+  "offlineDetailLocation": {
+    "ko_kr": "",
+    "en_us": ""
+  },
+  "startDatetime": "2023-03-15 10:51",
+  "endDatetime": "2023-03-15 10:51",
+  "sellStartDatetime": "2023-03-15 10:51",
+  "sellEndDatetime": "2023-03-15 10:51",
+  "displayStartDatetime": "2023-03-15 10:51",
+  "displayEndDatetime": "2023-03-15 10:51",
+  "ticketEndType": "1",
+  "eventDetailPage":
+  {
+    "location": "",
+    "displayCode": "10107",
+    "screenDisplays": [
+      {
+        "pageNo": 1,
+        "displayType": "20004",
+        "displayContents": {
+          "ko_kr": "eventDetailPage1_kr",
+          "en_us": "eventDetailPage1_us"
+        }
+      }
+    ]
+  },
+  "eventHosts": [
+    {
+      "domainId": 4,
+      "hostCode": "1"
+    }
+  ],
+  "surveys": [
+    {
+      "surveyCode": "1",
+      "surveyPath": {
+        "ko_kr": "surveyPath1_kr",
+        "en_us": "surveyPath1_us"
+      }
+    }
+  ],
+  "eventCoverImages": [
+    {
+      "location": "eventCoverImages location",
+      "displayCode": "10101",
+      "screenDisplays": [
+        {
+          "pageNo": 1,
+          "displayType": "20003",
+          "displayContents": {
+            "ko_kr": "eventCoverImages1_kr",
+            "en_us": "eventCoverImages1_us"
+          }
+        },
+        {
+          "pageNo": 1,
+          "displayType": "20003",
+          "displayContents": {
+            "ko_kr": "eventCoverImages2_kr",
+            "en_us": "eventCoverImages2_us"
+          }
+        }
+      ]
+    }
+  ],
+  "eventPopupBanners": [
+    {
+      "location": "eventPopupBanners location",
+      "displayCode": "10104",
+      "screenDisplays": [
+        {
+          "pageNo": 1,
+          "displayType": "20003",
+          "displayContents": {
+            "ko_kr": "eventPopupBanners1_kr",
+            "en_us": "eventPopupBanners1_us"
+          }
+        },
+        {
+          "pageNo": 1,
+          "displayType": "20005",
+          "displayContents": {
+            "ko_kr": "eventPopupBanners2_kr",
+            "en_us": "eventPopupBanners2_us"
+          }
+        }
+      ]
+    }
+  ]
+}

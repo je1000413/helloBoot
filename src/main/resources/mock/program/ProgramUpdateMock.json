@@ -1,0 +1,307 @@
+{
+  "eventId": 1000000000000029,
+  "programName": {
+    "ko_kr": "programName1_ko Update",
+    "en_us": "programName1_en Update"
+  },
+  "programDescription": {
+    "ko_kr": "programDescription1_ko Update",
+    "en_us": "programDescription1_en Update"
+  },
+  "programType": "1",
+  "switchType": "1",
+  "surveys": [
+    {
+      "surveyNo": "p-20230420114334839",
+      "surveyCode": "1",
+      "stateCode": 1,
+      "surveyPath": {
+        "ko_kr": "surveyPath1_ko Update",
+        "en_us": "surveyPath1_en Update"
+      }
+    }
+  ],
+  "sessions": [
+    {
+      "sessionId": 3000000000000042,
+      "sessionName": {
+        "ko_kr": "sessionName1_ko Update",
+        "en_us": "sessionName1_en Update"
+      },
+      "sessionType": "2",
+      "sessionDescription": {
+        "ko_kr": "sessionDescription1_ko Update",
+        "en_us": "sessionDescription1_en Update"
+      },
+      "maxMemberCount": 1000,
+      "hallName": {
+        "ko_kr": "hallName1_ko Update",
+        "en_us": "hallName1_en Update"
+      },
+      "location": "session location Update",
+      "startDatetime": "2023-03-15 10:51",
+      "endDatetime": "2023-03-15 10:51",
+      "hallStartDatetime": "2023-03-15 10:51",
+      "hallEndDatetime": "2023-03-15 10:51",
+      "parentSessionId": 0,
+      "questionYn": "n",
+      "mobileChatYn": "y",
+      "stateCode": 1,
+      "onlineCode": 1,
+      "packages": [
+        {
+          "packageId": "tc-33",
+          "packageName": {
+            "ko_kr": "packageName1_ko Update",
+            "en_us": "packageName1_en Update"
+          },
+          "ticket": {
+            "ticketId": "tc-33",
+            "ticketOnlineCode": "1",
+            "price": 300,
+            "maxTicketCount": 2000,
+            "ticketName": {
+              "ko_kr": "ticketName1_ko Update",
+              "en_us": "ticketName1_en Update"
+            }
+          }
+        },
+        {
+          "packageId": "tc-34",
+          "packageName": {
+            "ko_kr": "packageName2_ko Update",
+            "en_us": "packageName2_en Update"
+          },
+          "ticket": {
+            "ticketId": "tc-34",
+            "ticketOnlineCode": "1",
+            "price": 500,
+            "maxTicketCount": 300,
+            "ticketName": {
+              "ko_kr": "ticketName2_ko Update",
+              "en_us": "ticketName2_en Update"
+            }
+          }
+        },
+        {
+          "packageName": {
+            "ko_kr": "packageName3_ko Update",
+            "en_us": "packageName3_en Update"
+          },
+          "ticket": {
+            "ticketOnlineCode": "1",
+            "price": 100000,
+            "maxTicketCount": 100,
+            "ticketName": {
+              "ko_kr": "ticketName3_ko Update",
+              "en_us": "ticketName3_en Update"
+            }
+          }
+        }
+      ],
+      "sessionStaffs": [
+        {
+          "staffName": {
+            "ko_kr": "staffName1_ko Update",
+            "en_us": "staffName1_en Update"
+          },
+          "domainName": {
+            "ko_kr": "domainName1_ko Update",
+            "en_us": "domainName1_en Update"
+          },
+          "staffDescription": {
+            "ko_kr": "staffDescription1_ko Update",
+            "en_us": "staffDescription1_en Update"
+          },
+          "photoPath": {
+            "ko_kr": "photoPath1_ko Update",
+            "en_us": "photoPath1_en Update"
+          },
+          "staffType": "1"
+        }
+      ],
+      "sessionCoverImages": [
+        {
+          "displaySeq": 122,
+          "location": "sessionCoverImage location Update",
+          "displayCode": "10101",
+          "displayType": "20003",
+          "stateCode": "1",
+          "displayContents": {
+            "ko_kr": "displayContents1_ko Update",
+            "en_us": "displayContents1_en Update"
+          }
+        }
+      ],
+      "sessionMobileBottomBanners": [
+        {
+          "location": "sessionMobileBottomBanner location ",
+          "displayCode": "10108",
+          "displayType": "20003",
+          "stateCode": "1",
+          "displayContents": {
+            "ko_kr": "displayContents1_ko",
+            "en_us": "displayContents1_en"
+          }
+        },
+        {
+          "location": "sessionMobileBottomBanner location ",
+          "displayCode": "10108",
+          "displayType": "20005",
+          "stateCode": "1",
+          "displayContents": {
+            "ko_kr": "displayContents1_ko",
+            "en_us": "displayContents1_en"
+          }
+        }
+      ],
+      "onlineSpaceInfos": [
+        {
+          "displayCode": 10102,
+          "sessionDisplays": [
+            {
+              "displaySeq": 123,
+              "location": "lectureScreen1 Location 1 Update",
+              "displayCode": "10102",
+              "displayType": "20002",
+              "stateCode": 1,
+              "displayContents": {
+                "ko_kr": "www.naver.com1_ko Update",
+                "en_us": "www.naver.com1_en Update"
+              }
+            }
+          ]
+        },
+        {
+          "displayCode": "10102",
+          "sessionDisplays": [
+            {
+              "displaySeq": 124,
+              "location": "lectureScreen2 Location 1 Update",
+              "displayCode": "10102",
+              "displayType": "20002",
+              "stateCode": 1,
+              "displayContents": {
+                "ko_kr": "www.naver.com2_ko Update",
+                "en_us": "www.naver.com2_en Update"
+              }
+            }
+          ]
+        },
+        {
+          "displayCode": "10103",
+          "sessionDisplays": [
+            {
+              "displaySeq": 125,
+              "location": "promotionScreen1 Location 1 Update",
+              "displayCode": "10103",
+              "displayType": "20003",
+              "stateCode": 1,
+              "displayContents": {
+                "ko_kr": "www.naver.com3_ko Update",
+                "en_us": "www.naver.com3_en Update"
+              }
+            },
+            {
+              "displaySeq": 126,
+              "location": "promotionScreen1 Location 2 Update",
+              "displayCode": "10103",
+              "displayType": "20005",
+              "stateCode": 1,
+              "displayContents": {
+                "ko_kr": "www.naver.com4_ko Update",
+                "en_us": "www.naver.com4_en Update"
+              }
+            }
+          ]
+        },
+        {
+          "displayCode": "10103",
+          "sessionDisplays": [
+            {
+              "displaySeq": 127,
+              "location": "promotionScreen2 Location 1 Update",
+              "displayCode": "10103",
+              "displayType": "20003",
+              "stateCode": 1,
+              "displayContents": {
+                "ko_kr": "www.naver.com5_ko Update",
+                "en_us": "www.naver.com5_en Update"
+              }
+            },
+            {
+              "displaySeq": 128,
+              "location": "promotionScreen2 Location 2 Update",
+              "displayCode": "10103",
+              "displayType": "20005",
+              "stateCode": 1,
+              "displayContents": {
+                "ko_kr": "www.naver.com6_ko Update",
+                "en_us": "www.naver.com6_en Update"
+              }
+            }
+          ]
+        },
+        {
+          "displayCode": "10105",
+          "sessionDisplays": [
+            {
+              "displaySeq": 129,
+              "location": "wallBanner1 Location 1 Update",
+              "displayCode": "10105",
+              "displayType": "20003",
+              "stateCode": 1,
+              "displayContents": {
+                "ko_kr": "www.naver.com7_ko Update",
+                "en_us": "www.naver.com7_en Update"
+              }
+            },
+            {
+              "displaySeq": 130,
+              "location": "wallBanner1 Location 2 Update",
+              "displayCode": "10105",
+              "displayType": "20005",
+              "stateCode": 1,
+              "displayContents": {
+                "ko_kr": "www.naver.com8_ko Update",
+                "en_us": "www.naver.com8_en Update"
+              }
+            }
+          ]
+        }
+      ],
+      "attachments": [
+        {
+          "displaySeq": 131,
+          "location": "attachment location Update",
+          "displayCode": "10106",
+          "displayType": "20006",
+          "stateCode": 1,
+          "displayContents": {
+            "ko_kr": "displayContents1_ko Update",
+            "en_us": "displayContents1_en Update"
+          }
+        }
+      ]
+    }
+  ],
+  "programCoverImages": [
+    {
+      "screenId": 158,
+      "location": "programCoverImage Location 1 Update",
+      "displayCode": "10301",
+      "stateCode": 1,
+      "screenDisplays": [
+        {
+          "displaySeq": 208,
+          "pageNo": 1,
+          "displayType": "20003",
+          "displayContents": {
+            "ko_kr": "programCoverImage displayContents1_ko Update",
+            "en_us": "programCoverImage displayContents1_en Update"
+          }
+        }
+      ]
+    }
+  ]
+}

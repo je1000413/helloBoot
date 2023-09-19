@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mice.backoffice.c2v_mice_backoffice_api.repository.mybatis.BannerMybatisRepository">
+
+    <select id="findBannerListByCondition" parameterType="Map" resultType="Map">
+        CALL sp_platform_banner_select_list(
+              #{in_start_create_datetime}
+            , #{in_end_create_datetime}
+            , #{in_start_update_datetime}
+            , #{in_end_update_datetime}
+            , #{in_banner_code}
+            , #{in_banner_state_code}
+            , #{in_location_description}
+            , #{in_location}
+            , #{in_update_user}
+            , #{in_update_user_id}
+            , #{in_page_size}
+            , #{in_page_num})
+    </select>
+
+    <select id="findBannerDisplayListByCondition" parameterType="Map" resultType="Map">
+        CALL sp_platform_banner_display_select_list(
+            #{in_start_create_datetime}
+            , #{in_end_create_datetime}
+            , #{in_start_update_datetime}
+            , #{in_end_update_datetime}
+            , #{in_banner_code}
+            , #{in_banner_state_code}
+            , #{in_location_description}
+            , #{in_location}
+            , #{in_update_user}
+            , #{in_update_user_id}
+            , #{in_page_size}
+            , #{in_page_num})
+    </select>
+
+
+</mapper>
