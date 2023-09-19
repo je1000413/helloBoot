@@ -37,7 +37,7 @@ springdoc:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://172.32.28.51:10315/mice?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://ip:10315/mice?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
     username: platform_user
     password: PI-89ef#9d5D7
     hikari:
@@ -84,43 +84,11 @@ spring:
 
 allow:
   origin:
-    pattern: http://localhost:[*],https://localhost:[*],https://dev-mbo.com2verse.com:[*]
+    pattern: http://localhost:[*],https://localhost:[*],https://erse.com:[*]
 
 mybatis:
-  type-aliases-package: com.mice.backoffice.c2v_mice_backoffice_api.entity,  com.mice.backoffice.c2v_mice_backoffice_api.model
+  type-aliases-package: api.entity, api.model
   mapper-locations: classpath:mappers/**/*.xml
   configuration:
     map-underscore-to-camel-case: true
 
-chatServer:
-  domain: wss://devint-mice-chat.com2verse.com/chat?deviceId=%s&appId=%s&userId=%s
-  port: 80
-  timeout: 10000
-
-groupServer:
-  domain: https://devint-mice-group.com2verse.com/api/v1
-  timeout: 10000
-
-auth:
-  serverName: mice
-  serviceName: mice
-  serviceId: 300
-  domain: http://172.32.31.15:20010
-
-fileStorageV2:
-  domain: https://devint-mice-file.com2verse.com
-  managementName: mice
-  managementId: 5
-
-csvTableDataPath:
-  localizationStringForMice: /externals/c2v_table_data/Assets/External/Data/CSV/Mice/LocalizationString_MICE - String.csv
-  localizationStringForOffice: /externals/c2v_table_data/Assets/External/Data/CSV/LocalizationString - String.csv
-  emotion: /externals/c2v_table_data/Assets/External/Data/CSV/Emotion - Emotion.csv
-  effect: /externals/c2v_table_data/Assets/External/Data/CSV/Mice/EffectMICE - EffectMICE.csv
-  spaceOption: /externals/c2v_table_data/Assets/External/Data/CSV/Space - SpaceOptionSetting.csv
-  spaceBaseObject: /externals/c2v_table_data/Assets/External/Data/CSV/Space - BaseObject.csv
-  spaceTemplate: /externals/c2v_table_data/Assets/External/Data/CSV/Space - SpaceTemplate.csv
-  SpaceTemplateArrangement: /externals/c2v_table_data/Assets/External/Data/CSV/Space - SpaceTemplateArrangement.csv
-
-tokens:
-  system: eyJhbGciOiJFUzI1NiIsImtpZCI6ImMydi1zeXN0ZW0ta2V5IiwidHlwIjoiSldUIn0.eyJpc3MiOiJjb20ydmVyc2UuY29tIiwiZXhwIjoxNzIyNjg5ODQyLCJpYXQiOjE2OTEwNjc0NDEsImp0aSI6ImY2ZWM3MGQyLTg1MDItNDM4Yi1hZmIxLTVlYTVlZjY2ZTUyMyIsInNlcnZpY2VOYW1lIjoiYzJ2LW1pY2UtYmFja29mZmljZS1hcGkiLCJzZXJ2ZXJOYW1lIjoiYzJ2LW1pY2UtYmFja29mZmljZS1hcGkiLCJyb2xlIjoic3lzdGVtIn0.X0Yhn7gehcUxRjuSBMsrLgTQ-C0IqAlGL7nT_zggliHrr6vTjasw18IIcoNkqq2G4La7YhJO9GAaJT1L4_L-kA
